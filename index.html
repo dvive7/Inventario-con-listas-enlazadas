@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de productos</title>
+</head>
+
+<body>
+
+    <h1>Inventario de productos</h1>
+
+    <h2>Datos del producto</h2>
+
+    <label for="codigo">Código:</label>
+    <input type="text" id="codigo">
+    <br><br>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+    <br><br>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" min="0">
+    <br><br>
+
+    <label for="costo">Costo:</label>
+    <input type="number" id="costo" min="0" step="0.01">
+    <br><br>
+
+    <label for="posicion">Posición:</label>
+    <input type="number" id="posicion" min="1">
+    <br><br>
+
+    <h2>Operaciones</h2>
+
+    <button id="btnAgregar">Agregar</button>
+    <button id="btnBuscar">Buscar por código</button>
+    <button id="btnEliminar">Eliminar por código</button>
+    <button id="btnInsertar">Insertar en posición</button>
+    <button id="btnListar">Listar inventario</button>
+    <button id="btnExtraer">Extraer primero</button>
+    <button id="btnInicio">Agregar al inicio</button>
+    <button id="btnLimpiar">Limpiar campos</button>
+
+    <h2>Detalle de las operaciones</h2>
+
+    <div id="detalles">
+        Aquí se mostrarán los resultados.
+    </div>
+
+    <script src="Producto.js"></script>
+    <script src="Inventario.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
